@@ -1,0 +1,105 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-09-10T01:13:13.092Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"created": 1568076198982,
+			"description": "",
+			"modified": 1568076198982,
+			"name": "aepConceito",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_779149c6e7ad452d8f18644ae5eb01fe",
+			"color": null,
+			"created": 1568076198984,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1548092741230,
+			"modified": 1568076198984,
+			"name": "New Environment",
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_9bd407601b66403f9b54c5c1edd0ad47",
+			"cookies": [],
+			"created": 1568076198989,
+			"modified": 1568076198989,
+			"name": "Default Jar",
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_ef90f9696a8145788d2ca0dc72e81ca4",
+			"authentication": {},
+			"body": {},
+			"created": 1568076262140,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1568076262140,
+			"method": "GET",
+			"modified": 1568077887650,
+			"name": "getConceito",
+			"parameters": [],
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9092/api/conceitos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e154c33e725e49318b4be3b656ebf6ae",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"nota\": {\n\t\t\"nota\": 10\n\t},\n\t\"avaliacao\": {\n\t\t\"nome\": \"Programaçao 1\"\n\t},\n\t\"aluno\": {\n\t\t\"nome\": \"Brenda\"\n\t}\n}"
+			},
+			"created": 1568077620803,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5ab9ae3342f849f5b6d3029c773487b3",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1567553887541,
+			"method": "POST",
+			"modified": 1568077894388,
+			"name": "postConceito",
+			"parameters": [],
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9092/api/conceitos",
+			"_type": "request"
+		},
+		{
+			"_id": "env_fb39436e09744f329666ef563e07e9f4",
+			"color": null,
+			"created": 1568076198986,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1568076138220,
+			"modified": 1568076198986,
+			"name": "aepConceito",
+			"parentId": "env_779149c6e7ad452d8f18644ae5eb01fe",
+			"_type": "environment"
+		}
+	]
+}
