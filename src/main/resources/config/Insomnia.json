@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-09-10T01:13:13.092Z",
+	"__export_date": "2019-09-11T22:45:37.319Z",
 	"__export_source": "insomnia.desktop.app:v6.0.2",
 	"resources": [
 		{
@@ -44,7 +44,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1568076262140,
 			"method": "GET",
-			"modified": 1568077887650,
+			"modified": 1568241857951,
 			"name": "getConceito",
 			"parameters": [],
 			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
@@ -76,7 +76,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1567553887541,
 			"method": "POST",
-			"modified": 1568077894388,
+			"modified": 1568241867970,
 			"name": "postConceito",
 			"parameters": [],
 			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
@@ -87,6 +87,93 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "http://localhost:9092/api/conceitos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4a75235376204a648e96a312268c5400",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"id\": \"c62f2842-8cfe-448a-9a5b-3b495fa78d99\",\n\t\"nota\": {\n\t\t\"id\": \"0aa78cd9-9aaf-4bbd-8575-cc3b3a96990e\",\n\t\t\"nota\": 9.3\n\t},\n\t\"avaliacao\": {\n\t\t\"id\": \"97dfd8e6-ef67-4a36-867e-c63914a530fb\",\n\t\t\"nome\": \"Eng Soft\"\n\t},\n\t\"aluno\": {\n\t\t\"id\": \"2d170ffc-8f76-45a6-b527-b62e11c2e69f\",\n\t\t\"nome\": \"Brenda\"\n\t}\n}"
+			},
+			"created": 1568241571893,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5ab9ae3342f849f5b6d3029c773487b3",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1567553887491,
+			"method": "PUT",
+			"modified": 1568241791081,
+			"name": "putConceito",
+			"parameters": [],
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9092/api/conceitos/c62f2842-8cfe-448a-9a5b-3b495fa78d99",
+			"_type": "request"
+		},
+		{
+			"_id": "req_84b396d97e6a4cac9564d8934b6b484d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1568241794323,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5ab9ae3342f849f5b6d3029c773487b3",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1567553887441,
+			"method": "DELETE",
+			"modified": 1568241819521,
+			"name": "deleteConceito",
+			"parameters": [],
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9092/api/conceitos/f964369e-9be0-4a45-944c-9bf77b90c32c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_92502e4505eb44d1952acab2e007a2f7",
+			"authentication": {},
+			"body": {},
+			"created": 1568241843891,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1567815074840.5,
+			"method": "GET",
+			"modified": 1568241864903,
+			"name": "getConceitoById",
+			"parameters": [],
+			"parentId": "wrk_63157e617c8f40ed8d4700cbdac80189",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9092/api/conceitos/c62f2842-8cfe-448a-9a5b-3b495fa78d99",
 			"_type": "request"
 		},
 		{

@@ -34,16 +34,16 @@ public class ConceitoController {
 	}
 	
 	@PostMapping
-	public void post(@RequestBody Conceito novo) {
-		repo.save(novo);
-//		return novo.getId();
+	public String post(@RequestBody Conceito novo) {
+		novo = repo.save(novo);
+		return novo.getId();
 	}
 	
-//	@PutMapping("/{id}")
-//	public void put(@PathVariable String id, @RequestBody Conceito conceito) {
-//		if (!id.equals(conceito.getId())) {
-//			throw new RuntimeException("Id inválido!");
-//		}
-//		repo.save(conceito);
-//	}
+	@PutMapping("/{id}")
+	public void put(@PathVariable String id, @RequestBody Conceito conceito) {
+		if (!id.equals(conceito.getId())) {
+			throw new RuntimeException("Id inválido!");
+		}
+		repo.save(conceito);
+	}
 }
